@@ -71,14 +71,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
 .header{
   display: flex;
   align-items: center;
@@ -88,6 +80,7 @@ body{
   position: fixed;
   top:0; left: 0;
   z-index: 100;
+  background-color: #069f1f;
  
 }
 
@@ -127,6 +120,11 @@ body{
   display: none;
 }
 
+.logo1{
+  width: auto;
+  height: 60px;
+}
+
 
 
 
@@ -136,7 +134,7 @@ body{
 .home{
   min-height: 100vh;
   width: 100vw;
-  background:linear-gradient(rgb(34, 34, 34), var(--color));
+  background:linear-gradient(var(--color),rgb(34, 34, 34) );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +160,7 @@ body{
 .home button{
   height: 6rem;
   width: 19rem;
-  background-color: transparent;
+ background: rgba(31, 17, 17, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
   border-radius: 14px;
@@ -237,6 +235,7 @@ body{
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-top: 9rem;
 }
 
 .about .row{
@@ -290,6 +289,7 @@ body{
 .service{
   width: 100vw;
   text-align: center;
+  margin-top: 9rem;
 }
 
 .service .row{
@@ -412,6 +412,7 @@ body{
   min-height: 100vh;
   width: 100vw;
   text-align: center;
+  margin-top: 9rem;
 }
 
 .contact .row{
@@ -643,6 +644,7 @@ Responseev */
   .about .row{
     flex-flow: column-reverse;
     padding:0 2rem;
+    
   }
 
   .about .row .image img{
