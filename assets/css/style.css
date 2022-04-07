@@ -18,7 +18,7 @@ html{
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
 .heading{
@@ -303,6 +303,7 @@ body{
 .service .row .image img{
   width:50vw;
   height:55vh;
+ 
 }
 
 .service .row .content{
@@ -661,6 +662,9 @@ Responseev */
 
   .service .row .image img{
     width: 100vw;
+  }
+  #over-mob{
+    overflow-x: hidden;
   }
 
   .service .row .content{

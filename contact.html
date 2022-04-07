@@ -16,6 +16,8 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/test.css">
+        <!-- aos animation css -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
     <header class="header">
 
         <!-- <a href="#" class="logo"><i class="fas fa-magic"></i>design.</a> -->
-        <a href="#"><img class="logo1" src="./assets/image/LOGO JIVROM.png" alt=""></a>
+        <a href="#"><img class="logo1" src="./assets/image/LOGO JIVROM.png" alt="image"></a>
 
 
         <div class="fas fa-bars"></div>
@@ -55,11 +57,11 @@
 
         <div class="row">
 
-            <div class="image">
-                <img src="./assets/image/illustraion/Mention-rafiki.svg" alt="">
+            <div data-aos="fade-right" class="image">
+                <img src="./assets/image/illustraion/Mention-rafiki.svg" alt="image">
             </div>
 
-            <div class="form-container">
+            <div data-aos="fade-left" class="form-container">
                 <form action="">
 
                     <div class="inputBox">
@@ -84,11 +86,14 @@
     </section>
     <section class="service">
         <div class="row">
-            <div class="">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7858.6533273969735!2d76.284162!3d9.989852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b619f38f36ab3c!2sJIVROM%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1649290443381!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div data-aos="fade-right" class="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7858.6533273969735!2d76.284162!3d9.989852!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2b619f38f36ab3c!2sJIVROM%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1649290443381!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="image">
-                <img src="./assets/image/illustraion/Location review-pana.svg" alt="">
+            <div data-aos="fade-left" class="image">
+                <img src="./assets/image/illustraion/Location review-pana.svg" alt="image">
             </div>
 
 
@@ -101,7 +106,7 @@
     <!-- contact section ends -->
     <a
         href="https://api.whatsapp.com/send/?phone=%2B917356619429&text=I%27m+curious+to+the+know++about+JIVROM+and+its+services&app_absent=0">
-        <img style="width: 60px; height: 60px;" class="back-to-top" src="./assets/image/whatsaap.png" alt=""></a>
+        <img style="width: 60px; height: 60px;" class="back-to-top" data-aos="fade-left" src="./assets/image/whatsaap.png" alt="image"></a>
 
 
     <!-- footer section starts  -->
@@ -137,6 +142,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
+    <!-- Aos animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        $(`[data-aos]`).parent().addClass('remove-overflow')
+    </script>
     <!-- custom js file link  -->
 
     <script src="./assets/js/app.js"></script>

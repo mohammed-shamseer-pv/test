@@ -25,3 +25,7 @@
         height: 350px;
     }
 }
+
+.remove-overflow{
+  overflow-x: hidden;
+}

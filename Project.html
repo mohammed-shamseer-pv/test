@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/projact.css">
     <link rel="stylesheet" href="./assets/css/test.css">
+      <!-- aos animation css -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
     <header class="header">
 
         <!-- <a href="#" class="logo"><i class="fas fa-magic"></i>design.</a> -->
-        <a href="#"><img class="logo1" src="./assets/image/LOGO JIVROM.png" alt=""></a>
+        <a href="#"><img class="logo1" src="./assets/image/LOGO JIVROM.png" alt="image"></a>
 
 
         <div class="fas fa-bars"></div>
@@ -48,22 +50,22 @@
 
     <section id="service" class="service">
         <div class="row">
-            <div class="content">
+            <div data-aos="fade-right" class="content">
                 <h3>IOS and Android App Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel
                     temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet.
                     Inventore voluptas nemo placeat. Voluptas.</p>
 
             </div>
-            <div class="image">
-                <img src="./assets/image/illustraion/Home screen-rafiki.svg" alt="">
+            <div data-aos="fade-left" class="image">
+                <img src="./assets/image/illustraion/Home screen-rafiki.svg" alt="image">
             </div>
         </div>
         <div class="row">
-            <div class="image">
-                <img src="./assets/image/illustraion/Home screen-cuate.svg" alt="">
+            <div data-aos="fade-right" class="image">
+                <img src="./assets/image/illustraion/Home screen-cuate.svg" alt="image">
             </div>
-            <div class="content">
+            <div data-aos="fade-left" class="content">
                 <h3>IOS and Android App Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem, tempore hic deserunt vel
                     temporibus aperiam recusandae ratione, obcaecati at qui accusamus enim, laudantium eveniet.
@@ -82,9 +84,9 @@
 
    
 
-    <div class="box-container">
+    <div data-aos="fade-left" class="box-container">
 
-        <div class="box">
+        <div  class="box">
             <i class="fas fa-magic"></i>
             <h3>smooth design</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ad neque. Voluptatem alias beatae accusamus laudantium nisi assumenda libero.</p>
@@ -120,7 +122,7 @@
 </section>
 
 <!-- features section ends -->
-<a href="https://api.whatsapp.com/send/?phone=%2B917356619429&text=I%27m+curious+to+the+know++about+JIVROM+and+its+services&app_absent=0"> <img style="width: 60px; height: 60px;" class="back-to-top fa-shake" src="./assets/image/whatsaap.png" alt=""></a>
+<a href="https://api.whatsapp.com/send/?phone=%2B917356619429&text=I%27m+curious+to+the+know++about+JIVROM+and+its+services&app_absent=0"> <img style="width: 60px; height: 60px;" class="back-to-top fa-shake" data-aos="fade-left" src="./assets/image/whatsaap.png" alt="image"></a>
  <!-- footer section starts  -->
 
  <section class="footer">
@@ -143,6 +145,22 @@
 
 
 <!-- footer section ends -->
+
+
+  <!-- jquery file link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Aos animation js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+  <script type="text/javascript">
+      $(`[data-aos]`).parent().addClass('remove-overflow')
+  </script>
+
+  <!-- custom js file link  -->
+
+  <script src="./assets/js/app.js"></script>
 
 </body>
 
